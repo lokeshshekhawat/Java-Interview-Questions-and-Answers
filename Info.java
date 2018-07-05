@@ -5,24 +5,24 @@ import java.util.Scanner;
 class into
 {
 	Scanner ss=new Scanner(System.in);
-	void lower()
+	void upper()
 	{
-		String s="THIS IS STRING";
+		String s="this is string";
 		for(int i=0;i<s.length();i++)
 		{
 			char c=s.charAt(i);
-			if(c>65 && c<90)
+			if(c>96 && c<120)
 			{
-				c=(char)(c+32);
+				c=(char)(c-32);
 			}
 			System.out.print(c);
 		}
 		System.out.println();
-	}	
+	}
 }
 public class Info {
 	public static void main(String[] args) {
 		into in=new into();
-		in.lower();
+		in.upper();
 	}
 }
